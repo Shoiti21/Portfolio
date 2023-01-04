@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-const Nav = styled.div`
+const Nav = styled.nav`
+  display: flex;
   background-color: #252526;
   height: 30px;
 `;

@@ -23,7 +23,11 @@ const Comment = ({ textLine, multiLine }) => {
     );
 
     return (
-      <Expand disabled={!multiLine} initial={lineInitial} final={lineFinal}>
+      <Expand
+        disabled={!multiLine}
+        initial={multiLine && lineInitial}
+        final={multiLine && lineFinal}
+      >
         {formattedLine}
       </Expand>
     );

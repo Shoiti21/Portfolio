@@ -1,5 +1,4 @@
 import React from "react";
-import { useRouter } from "next/router";
 import Comment from "../src/components/Comment";
 import Function from "../src/components/Function";
 import Expand from "../src/components/Expand";
@@ -15,7 +14,6 @@ import {
 } from "react-icons/si";
 
 export default function HomePage() {
-  const { asPath } = useRouter();
   return (
     <React.Fragment>
       <div style={{ marginLeft: 25 }}>
@@ -26,7 +24,7 @@ export default function HomePage() {
             "Componente de atualização do portifolio",
           ]}
           multiLine
-        ></Comment>
+        />
         <Function
           name={"Portfolio"}
           params={{ name: "Leandro Shoiti Tokunaga" }}

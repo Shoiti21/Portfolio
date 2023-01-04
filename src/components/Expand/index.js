@@ -12,14 +12,16 @@ const Expand = ({ disabled, children, initial, final }) => {
 
   return (
     <div style={{ display: "flex", widht: "100%" }}>
-      <styles.Icon open={open} onClick={() => setOpen(!open)} />
+      {!disabled && <styles.Icon open={open} onClick={() => setOpen(!open)} />}
       <div style={{ flex: 1 }}>
-        <styles.LineInitial open={open}>
-          {initial}
-          <styles.Ellipsis open={open} onClick={() => setOpen(!open)}>
-            ···
-          </styles.Ellipsis>
-        </styles.LineInitial>
+        {initial && (
+          <styles.LineInitial open={open}>
+            {initial}
+            <styles.Ellipsis open={open} onClick={() => setOpen(!open)}>
+              ···
+            </styles.Ellipsis>
+          </styles.LineInitial>
+        )}
         <styles.Item
           ref={content}
           style={{
