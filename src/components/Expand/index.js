@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./styles";
-import { FiChevronDown } from "react-icons/fi";
 
 const Expand = ({ disabled, children, initial, final }) => {
   const [open, setOpen] = React.useState(true);

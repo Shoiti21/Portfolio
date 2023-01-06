@@ -1,16 +1,17 @@
-import Link from "next/link";
 import React from "react";
 import styles from "./styles";
 
-const Tab = ({ name, href, active }) => {
+const Tab = ({ name, href, active, onClose }) => {
   return (
-    <styles.Tab>
-      <styles.Close onClick={() => {}} size="12px" />
-      <styles.ButtonLink href={href} active={active}>
-        <styles.Icon active={active} />
-        <span>{name}.js</span>
-      </styles.ButtonLink>
-    </styles.Tab>
+    <React.Fragment>
+      <styles.Tab>
+        <styles.Close onClick={onClose} size="12px" />
+        <styles.ButtonLink href={href} active={active}>
+          <styles.Icon active={active} />
+          <span>{name}.js</span>
+        </styles.ButtonLink>
+      </styles.Tab>
+    </React.Fragment>
   );
 };
 
