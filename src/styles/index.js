@@ -26,14 +26,16 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-html {
-	display: flex;
-}
 body {
   background-color: #1e1e1e;
   color: white;
   line-height: 1.3;
   font-family: Consolas, 'Courier New', monospace;
+}
+#__next {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 ol, ul {
 	list-style: none;
@@ -54,7 +56,7 @@ a {
   text-decoration: none;
 }
 #modal-root {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
