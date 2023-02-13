@@ -16,8 +16,8 @@ const handleColorType = (color, theme) => {
       return theme.colors.pinkMedium;
     case "orage-medium":
       return theme.colors.orageMedium;
-    case "green":
-      return theme.colors.green;
+    case "green-lightest":
+      return theme.colors.greenLightest;
     default:
       return "white";
   }
