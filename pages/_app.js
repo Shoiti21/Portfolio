@@ -8,6 +8,7 @@ import { GlobalStyle, theme } from "../src/styles";
 const MyApp = ({ Component, pageProps }) => {
   return (
     <React.Fragment>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
         <title>{`Portfolio do Shoiti`}</title>
@@ -15,7 +16,9 @@ const MyApp = ({ Component, pageProps }) => {
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <NavTabs />
-        <Component {...pageProps} />
+        <div style={{ marginLeft: 25, overflow: "auto" }}>
+          <Component {...pageProps} />
+        </div>
         <Footer />
       </ThemeProvider>
     </React.Fragment>

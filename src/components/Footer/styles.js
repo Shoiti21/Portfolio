@@ -5,14 +5,13 @@ const Footer = styled.footer`
   align-items: flex-end;
   position: sticky;
   bottom: 0;
-  width: 100%;
   flex-grow: 2;
 `;
 
 const FooterContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.grayDark};
-  width: 100%;
-  height: 200px;
+  width: 100vw;
+  height: 25vh;
   border-top: 1px solid rgb(255, 255, 255, 0.2);
 `;
 

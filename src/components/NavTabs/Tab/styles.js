@@ -7,7 +7,6 @@ const Tab = styled.div(({ theme }) => ({
   position: "relative",
   display: "flex",
   alignItems: "center",
-  minWidth: "90px",
   width: "max-content",
   height: "30px",
   borderLeft: `1.5px solid ${theme.colors.grayMedium}`,
