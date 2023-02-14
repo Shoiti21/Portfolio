@@ -6,8 +6,8 @@ const Tab = ({ name, href, active, onClose }) => {
     <React.Fragment>
       <styles.Tab>
         <styles.Close onClick={onClose} size="12px" />
-        <styles.ButtonLink href={href} active={active}>
-          <styles.Icon active={active} />
+        <styles.ButtonLink href={href} active={!!active}>
+          <styles.Icon active={!!active} />
           <span>{name}.js</span>
         </styles.ButtonLink>
       </styles.Tab>
