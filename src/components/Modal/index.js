@@ -29,7 +29,7 @@ const Modal = ({ show, onClose, title, subTitle, description, buttons }) => {
           </styles.ModalContainerButton>
         </styles.Modal>
       </styles.ModalOverlay>,
-      document.getElementById("modal-root")
+      document.body
     );
   } else {
     return null;

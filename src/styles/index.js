@@ -55,13 +55,6 @@ table {
 a {
   text-decoration: none;
 }
-#modal-root {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
 `;
 
 const theme = {
