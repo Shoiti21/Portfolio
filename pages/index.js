@@ -19,9 +19,9 @@ export default function HomePage() {
     <React.Fragment>
       <Comment
         textLine={[
-          "Hellow World! Bem-vindo, você está no meu portfolio",
+          "Hellow World! Bem-vindo, você está no meu Portfólio",
           " ",
-          "Componente de atualização do portifolio",
+          "Componente de atualização do Portfólio",
         ]}
         multiLine
       />
@@ -104,13 +104,17 @@ export default function HomePage() {
                     No projeto Starters da GFT, onde tive a oportunidade de
                     ingressar na área de Analista de Sistema, passando por
                     desafios de criação de projetos em MVC com JavaScrpt e C#.
-                    Atuando há 6 meses nesse projeto. No projeto Banco Original
-                    atuei como desenvolvedor front-end na linguagem JavaScript
-                    com AngularJS em um aplicativo mobile no período de 6 meses
-                    de atuação. Após um período estudando sobre ReactJs.
-                    participei do grupo de estudos de React apresentar uma talk
-                    sobre GraphQL, participando semanalmente do grupo de estudos
-                    compartilhando experiências do projeto em que atuo.
+                    Atuando há 6 meses nesse projeto.
+                    <br />
+                    <br />
+                    No projeto Banco Original atuei como desenvolvedor front-end
+                    na linguagem JavaScript com AngularJS em um aplicativo
+                    mobile no período de 6 meses de atuação. Após um período
+                    estudando sobre ReactJs. participei do grupo de estudos de
+                    React apresentar uma talk sobre GraphQL, participando
+                    semanalmente do grupo de estudos compartilhando experiências
+                    do projeto em que atuo.
+                    <br />
                     <br />
                     No projeto Share Universe tive a oportunidade e desafio de
                     aprender sobre NodeJS para auxílio da equipe, além de
